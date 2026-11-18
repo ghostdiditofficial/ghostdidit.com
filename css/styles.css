@@ -367,3 +367,15 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px
   .js .rev { opacity: 1; transform: none; transition: none; }
   .btn, .mod, .stream-card { transition: none; }
 }
+
+/* Featured work (11/18): playlist highlights, link out to YouTube */
+ul.work-grid { list-style: none; margin: 18px 0 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 14px; }
+.work { display: flex; flex-direction: column; gap: 4px; text-decoration: none; color: inherit; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; padding-bottom: 12px; background: rgba(255,255,255,0.02); }
+.work img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block; margin-bottom: 8px; }
+.work span { padding: 0 12px; }
+.work-a { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: #b98ce8; }
+.work-t { font-weight: 700; font-size: 1.05rem; }
+.work-n { font-size: 0.85rem; opacity: 0.75; }
+.work:hover, .work:focus-visible { border-color: #7832B9; }
+@media (min-width: 640px) { ul.work-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { ul.work-grid { grid-template-columns: repeat(3, 1fr); } }
