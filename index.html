@@ -45,7 +45,7 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="GhostDidit, back to top">
-        <span class="brand-dot" aria-hidden="true"></span>GhostDidit
+        <img class="brand-logo" src="assets/ghostdidit-wordmark.png" width="600" height="186" alt="GhostDidit.com">
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         <span class="sr-only">Menu</span>
@@ -70,26 +70,8 @@
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-glow" aria-hidden="true"></div>
       <div class="wrap hero-inner">
-        <!--
-          TODO (logo): this round badge is a TEXT PLACEHOLDER for Jeff's real
-          "GHOST DID IT" badge logo (the purple sticker logo from the old site).
-          The file isn't in the repo. Drop it in as assets/ghostdidit-badge.png (or .svg)
-          and swap this <svg> for:
-          <img class="badge" src="assets/ghostdidit-badge.png" width="320" height="320" alt="GHOST DID IT badge logo">
-        -->
-        <svg class="badge" viewBox="0 0 320 320" role="img" aria-labelledby="badge-t">
-          <title id="badge-t">GHOST DID IT badge (placeholder)</title>
-          <defs>
-            <path id="badge-arc-top" d="M 50 160 A 110 110 0 0 1 270 160"/>
-            <path id="badge-arc-bot" d="M 40 160 A 120 120 0 0 0 280 160"/>
-          </defs>
-          <circle cx="160" cy="160" r="152" class="b-ring"/>
-          <circle cx="160" cy="160" r="136" class="b-ring-thin"/>
-          <text class="b-arc"><textPath href="#badge-arc-top" startOffset="50%" text-anchor="middle">HOUSTON · TEXAS</textPath></text>
-          <text class="b-arc"><textPath href="#badge-arc-bot" startOffset="50%" text-anchor="middle">NATIONS CREATIVE</textPath></text>
-          <text x="160" y="150" text-anchor="middle" class="b-main">GHOST</text>
-          <text x="160" y="205" text-anchor="middle" class="b-main b-accent">DID IT</text>
-        </svg>
+        <!-- Jeff's real GHOST DID IT badge (from the old site, recolored white on transparent; source in assets/brand-src/) -->
+        <img class="badge" src="assets/ghostdidit-badge.png" width="640" height="640" alt="GHOST DID IT badge logo">
 
         <div class="hero-copy">
           <p class="tc"><span class="tc-time">00:00:00:01</span> Houston, TX</p>
