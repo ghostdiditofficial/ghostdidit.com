@@ -8,13 +8,9 @@
  */
 const BOOKING_ENDPOINT = '';
 
-/*
- * TODO (booking): once there is a public booking line, add it to this note
- * (e.g. "Text or call Ghost at ..."). No phone number on the site for now.
- */
+/* No phone number on the site, ever (Jeff 11/18): the form + Instagram DMs are the only ways in. */
 const BOOKING_FALLBACK =
-  'Online booking is almost ready. For now, text or call Ghost (booking number coming soon), ' +
-  'or send a DM on Instagram @djghosthtx. Your details were not sent.';
+  'Online booking is almost ready. For now, send a DM on Instagram @djghosthtx. Your details were not sent.';
 
 (function () {
   'use strict';
