@@ -228,6 +228,7 @@ ul.strip { display: grid; grid-template-columns: 1fr; gap: 1px; margin-top: 44px
 .stream-handle { color: var(--ink-dim); font-size: 15px; overflow-wrap: anywhere; }
 .stream-yt:hover { transform: none; }
 .yt-pick { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+.yt-pick-stack { grid-template-columns: 1fr; }
 .yt-pick a { display: flex; flex-direction: column; gap: 3px; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: 4px; color: var(--ink); text-decoration: none; transition: border-color .2s ease, background .2s ease; min-width: 0; }
 .yt-pick a:hover, .yt-pick a:focus-visible { border-color: var(--purple-lite); background: rgba(23, 18, 33, .95); }
 .yt-pick b { font: 500 12px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--purple-lite); }
