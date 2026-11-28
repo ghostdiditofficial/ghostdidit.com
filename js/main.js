@@ -59,29 +59,9 @@ const BOOKING_FALLBACK =
     revs.forEach(function (el) { el.classList.add('in'); });
   }
 
-  /* "On air" label: Kick stream is Wednesday nights, Houston time.
-     Assumed window 7 PM – midnight CT. TODO: adjust to the real stream hours. */
-  (function () {
-    var parts;
-    try {
-      parts = new Intl.DateTimeFormat('en-US', {
-        timeZone: 'America/Chicago', weekday: 'short', hour: 'numeric', hour12: false
-      }).formatToParts(new Date());
-    } catch (err) { return; }
-    var get = function (t) { var p = parts.find(function (x) { return x.type === t; }); return p ? p.value : ''; };
-    var day = get('weekday');
-    var hour = parseInt(get('hour'), 10) % 24;
-    var short = 'Every Wednesday';
-    var long = 'Live Wednesday nights';
-    if (day === 'Wed' && hour >= 19) {
-      short = 'Live tonight'; long = 'Live tonight on Kick';
-      document.querySelectorAll('.strip-item, .stream-kick').forEach(function (el) { el.classList.add('is-live'); });
-    } else if (day === 'Wed') {
-      short = 'Tonight'; long = 'Live tonight';
-    }
-    document.querySelectorAll('.js-onair').forEach(function (el) { el.textContent = short; });
-    document.querySelectorAll('.js-onair-long').forEach(function (el) { el.textContent = long; });
-  })();
+  /* "On air" label: the Kick stream runs most nights (no fixed day), so the labels stay generic. */
+  document.querySelectorAll('.js-onair').forEach(function (el) { el.textContent = 'Most nights'; });
+  document.querySelectorAll('.js-onair-long').forEach(function (el) { el.textContent = 'Live most nights'; });
 
   /* Houston Pokes wheel: draw wire spokes */
   var spokes = document.querySelector('.w-spokes');
