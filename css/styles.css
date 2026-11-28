@@ -147,7 +147,7 @@ ul[role="list"] { list-style: none; margin: 0; padding: 0; }
 @keyframes breathe { 0%, 100% { opacity: .6; } 50% { opacity: 1; } }
 .hero-inner { display: flex; flex-direction: column; align-items: flex-start; gap: 28px; }
 
-.badge { width: min(220px, 60vw); height: auto; filter: drop-shadow(0 0 30px rgba(120, 50, 185, .45)); }
+.badge { width: min(220px, 60vw); height: auto; filter: drop-shadow(0 0 30px rgba(209, 10, 30, .40)); }
 .b-ring { fill: #0b0810; stroke: var(--purple); stroke-width: 8; }
 .b-ring-thin { fill: none; stroke: rgba(242, 238, 248, .35); stroke-width: 1.5; stroke-dasharray: 3 5; }
 .b-arc { fill: var(--ink-dim); font: 500 15px var(--mono); letter-spacing: .3em; }
